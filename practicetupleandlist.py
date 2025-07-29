@@ -1,5 +1,5 @@
-#write a program to check if a list contain a palindromeof elements .hint(use copy method())
-element=["apple","ball","appe"]
+ #write a program to check if a list contain a palindromeof elements .hint(use copy method())
+"""element=["apple","ball","appe"]
 element1=element.copy()
 element1.reverse()
 if(element==element1):
@@ -17,7 +17,15 @@ variable4.append("a")
 variable4.append("b")
 variable4.append("c")
 print(variable4)
+"""
+#WAP to count the number of student with"a" grade in the following #tuples["c","d","a","a","b","b","a"]
+tuples1=["C","D","A","B","B","A"]
+count =tuples1.count("A")
+print(count)
+ 
 
-#comment
-
+#wap to store the above in alist and sort them from"a" to "d".
+tuples1=["C","D","A","B","B","A"]
+tuples1.sort()
+print(tuples1)
 
