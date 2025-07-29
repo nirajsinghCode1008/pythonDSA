@@ -6,10 +6,8 @@
 #my_list.append("orange")
 
 #print(my_list)  # Output: ['apple', 'ball', 1, 'orange']
-list1 = ['a', 'b' , 'c']
-list2 = [1, 2, 3]
-n = len(list1)
-for x in range (n): 
-    if x == 1:
-        print(list1[1])  
-  
+
+
+
+x =[ 1,2 ,3,4,5]
+print(len(x))
