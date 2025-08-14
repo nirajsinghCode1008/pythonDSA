@@ -1,14 +1,19 @@
-#checking the prime number and retun true and false if it is prime
-def checkPrimenumber(number):
-    if number==0:
-        return 1
-    factorial=1
-    for i in range(1,number +1):
-        factorial *= i
-    print(factorial)
+def countVowel(count):
+    count1=count.count("a")
+    print("a =",count1)
+    count1=count.count("e")
+    print("e =",count1)
+    count1=count.count("i")
+    print("i =",count1)
+    count1=count.count("o")
+    print("o =",count1)
+    count1=count.count("u")
+    print("u =",count1)
+    sum=(count1+count1+count1+count1+count1)
+    return sum
+
     
     
-number= int(input())
-
-checkPrimenumber(number)
-
+count=input() 
+   
+countVowel(count)
