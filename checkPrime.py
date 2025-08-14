@@ -1,11 +1,12 @@
 #checking the prime number and retun true and false if it is prime
 def checkPrimenumber(number):
+    if number==0:
+        return 1
+    factorial=1
+    for i in range(1,number +1):
+        factorial *= i
+    print(factorial)
     
-    
-    if number%1 == 0 and number //number== 0:
-        print(True)
-    else:
-        print(False)  
     
 number= int(input())
 
