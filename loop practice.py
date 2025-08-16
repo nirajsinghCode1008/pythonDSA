@@ -80,3 +80,16 @@ while i < N:
 
 
 
+# how to revese it in function 
+def digitize(n):
+    result=0
+    while n !=0:
+        lastnumber=n%10  # get last number as remainder 
+        
+        result=result*10 + lastnumber       #
+        n = n //10
+    
+    return result
+
+n=35231
+print(digitize(n))
