@@ -93,3 +93,16 @@ def digitize(n):
 
 n=35231
 print(digitize(n))
+
+
+
+
+# prnit the infinite loop until the user don't given the exit command .
+while True:
+    input_user= input("enter your string :")
+    if input_user=="exit":
+        break
+        print("congratulatiom you guess the right one to stop this")
+    print("the loop is continuing",input_user)    
+    
+
