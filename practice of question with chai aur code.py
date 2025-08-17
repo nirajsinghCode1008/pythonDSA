@@ -64,4 +64,16 @@ for char in input_str:
     
 print(reverse_num)   
 
+
+
+
+# find the print non- repeated character
+input_str="dabbusingh"
+
+for char in input_str:
+    
+    if input_str.count(char) == 1:
+         print('char is ',char)
+         break
+     
     
