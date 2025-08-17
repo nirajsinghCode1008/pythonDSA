@@ -9,5 +9,17 @@ def findpositive(number):
         
 
 findpositive(number)        
+       
 
+
+       
+
+
+number=[1,-2,3,-4,5,6,7,8,-3,14,10]
+countpositivenumber=1
+for i in number:
+    if i > 0:
+        countpositivenumber +=1
+print("the total number of positive number is:", countpositivenumber)        
+    
     
