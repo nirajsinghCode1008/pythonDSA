@@ -68,12 +68,21 @@ print(reverse_num)
 
 
 # find the print non- repeated character
-input_str="dabbusingh"
+input_str="narayan prasad singh"
 
 for char in input_str:
     
     if input_str.count(char) == 1:
          print('char is ',char)
          break
+    
+
+#factorial calculator
+number=10
+factorise=1
+while number>0:
+    factorise=factorise * number
+    number -= 1
+print("the factoril number is :",factorise)         
      
     
