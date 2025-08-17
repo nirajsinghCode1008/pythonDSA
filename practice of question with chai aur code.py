@@ -34,5 +34,22 @@ sumofeven=0
 for i in range(n):
     if i % 2== 0:
         sumofeven=sumofeven + i
-print(sumofeven)        
-       
+print(sumofeven) 
+
+
+
+#write a program to find the number of even
+n=10
+sumofeven=0
+for i in range(n):
+    if i % 2!= 0:
+        sumofeven += 1
+print(sumofeven) 
+
+
+#write a program to create a multiplication of number till 10
+
+n=10
+for i in range(1,n+1):
+    mul = i *n
+    print(f"{n} * {i} =", mul)      
