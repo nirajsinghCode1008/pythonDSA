@@ -51,5 +51,8 @@ print(sumofeven)
 
 n=10
 for i in range(1,n+1):
-    mul = i *n
-    print(f"{n} * {i} =", mul)      
+    if i==5:
+        continue
+    print(i,"x",n,"=",i*n)  
+
+    
