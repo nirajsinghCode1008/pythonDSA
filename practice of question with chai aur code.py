@@ -55,4 +55,13 @@ for i in range(1,n+1):
         continue
     print(i,"x",n,"=",i*n)  
 
+
+ #write a program to reverse a strinf from loop 
+input_str="python"
+reverse_num=" "
+for char in input_str:
+    reverse_num = char + reverse_num
+    
+print(reverse_num)   
+
     
