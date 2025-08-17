@@ -16,10 +16,14 @@ findpositive(number)
 
 
 number=[1,-2,3,-4,5,6,7,8,-3,14,10]
-countpositivenumber=1
+countpositivenumber=0
+countnegativenumber=0
 for i in number:
     if i > 0:
         countpositivenumber +=1
+    elif i < 0:
+        countnegativenumber +=1
 print("the total number of positive number is:", countpositivenumber)        
+print("the total number of negative number is:", countnegativenumber)        
     
     
