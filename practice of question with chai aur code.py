@@ -83,6 +83,41 @@ factorise=1
 while number>0:
     factorise=factorise * number
     number -= 1
-print("the factoril number is :",factorise)         
-     
+print("the factoril number is :",factorise)  
+
+
+# vlid input 
+#pronlem,keep asking the user for input until the enter a number betwwen 1 to 10
+
+while True:
+    number = int(input("enter your number betwwen 1 to 10:"))
+    if 1<= number <= 10:
+        print("thanks")
+        break
+    else:
+        ("invalid nuber try again")    
     
+     
+
+
+#find the given number is prime or not
+number=12
+for i in range(2,number):
+    if number%i==0:
+        print("not prime")
+        break
+else:
+    print("prime")
+         
+    
+
+# exponents backoff
+import time
+attempt=0
+max_retries=5
+wait_time=1
+while attempt<max_retries:
+    print("attempt",attempt+1,"wait_time",wait_time,)
+    time.sleep(wait_time)
+    attempt +=1
+    wait_time*=2
