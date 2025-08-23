@@ -112,3 +112,23 @@ for i in range(num):
     for j in range(num-1-i ):
         print("*",end=" ")       
     print()    
+
+
+
+    """"
+    #write program to print the star like this
+         *
+       * * *
+     * * * * * 
+   * * * * * * *
+ * * * * * * * * *
+"""
+num=5
+for i in range(num):
+    for j in range(i,num):
+        print(" ",end=" ")
+    for j in range(i+1):
+        print("*",end=" ") 
+    for j in range(i):
+        print("*",end=" ")       
+    print()    
