@@ -165,3 +165,19 @@ for i in range(1,n+1):
                 print(i,end=" ")
                
             print()
+
+
+
+'''
+write a program to print a pattern like this
+12345
+1234
+123
+12
+1
+'''
+n=5
+for i in range(0,n+1):
+    for j in range(n-i):
+        print(j+1,end=" ")
+    print()
