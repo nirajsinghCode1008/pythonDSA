@@ -425,13 +425,39 @@ ABCDEDCBA
 
 
 Print the pattern in the function given to you."""
-class Solution:
-    def pattern17(self, n):
-        for i in range(n):
-            for j in range(n-i-1):
-                print(" ",end="")
-            for k in range(i+1):
-                print(chr(65+k),end="")
-            for l in range(1,i+1):
-                print(chr(65+i-l),end="")
-            print()       
+n=5
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ",end="")
+    for k in range(i+1):
+        print(chr(65+k),end="")
+    for l in range(1,i+1):
+        print(chr(65+i-l),end="")
+    print()   
+
+
+
+            #or
+
+
+      
+        #print the number of rows
+for i in range(n):
+
+    #printing spaces
+    for j in range (n-i-1):
+        print(" ",end="")
+            
+    #printing character
+    ch = 'A'
+    breakpioint=(2 * i +1)//2
+    for j in range (1, 2 * i + 2):
+        print(ch ,end="")
+        if j <=breakpioint:
+            ch = chr(ord(ch)+1)
+        else:
+            ch = chr(ord(ch)-1)
+        
+    print()
+                  
+           
