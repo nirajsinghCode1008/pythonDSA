@@ -104,7 +104,7 @@ while True:
 number=12
 for i in range(2,number):
     if number%i==0:
-        print("not prime")
+        print("not prime") 
         break
 else:
     print("prime")
@@ -121,3 +121,30 @@ while attempt<max_retries:
     time.sleep(wait_time)
     attempt +=1
     wait_time*=2
+
+
+
+
+
+
+# write a program to find a given number is prime or not
+number = 29
+for i in range(2,number):
+    if number % i == 0:
+        print(number," is not a prime number")
+        break
+    else:
+        print("the prime number is", number)
+        break
+
+
+    
+
+# find a prime a number between fron 1 to given number
+for i in range(2,20):
+    for j in range(2,i):
+        if i % j == 0:
+          break
+    else:
+        print(i,end=",")
+        
