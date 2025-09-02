@@ -515,5 +515,41 @@ for i in range(1,1+n):
        print(" ",end="")
     for l in range(i):
        print("*",end="")
-    print()        
+    print()  
+
+    """Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
+
+
+
+5 5 5 5 5 5 5 5 5 
+5 4 4 4 4 4 4 4 5 
+5 4 3 3 3 3 3 4 5 
+5 4 3 2 2 2 3 4 5 
+5 4 3 2 1 2 3 4 5 
+5 4 3 2 2 2 3 4 5 
+5 4 3 3 3 3 3 4 5 
+5 4 4 4 4 4 4 4 5 
+5 5 5 5 5 5 5 5 5
+Print the pattern in the function given to you
+""" 
+n = int(input())
+if n==1:
+    print(1)
+else: 
+    size = 2 * n-1
+    for i in range(1, size+1):
+        for j in range(1, size+1):
+            if i==1 or j==1 or i==2*n-1 or      j==2*n-1  :
+                print(n,end=" ")
+            elif i==2 or j==2 or i==2*n-2 or j==2*n-2 :
+                print(n-1,end=" ")
+            elif i==3 or j==3 or i==2*n-3 or j==2*n-3 :
+                print(n-2,end=" ")
+            elif i==4 or j==4 or i==2*n-4 or j==2*n-4 :
+                print(n-3,end=" ")
+            elif i==5 or j==5 or i==2*n-5 or j==2*n-5 :
+                print(n-4,end=" ")        
+            else:
+                print()
+        print()             
            
