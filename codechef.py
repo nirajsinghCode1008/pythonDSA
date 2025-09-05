@@ -65,6 +65,19 @@ while t > 0:
         print(x+profit_extra_choc)
     
     
+"""Find Remainder
+Write a program to find the remainder when an integer A is divided by an integer B.
+"""
+t=int(input())
+while t>0:
+    A,B = map(int,input().split())
+    
+    t-=1
+    reminder=A%B
+    print(reminder)
+    
+    
+
 
     
 
