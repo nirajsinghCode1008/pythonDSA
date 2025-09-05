@@ -75,6 +75,35 @@ while t>0:
     t-=1
     reminder=A%B
     print(reminder)
+
+    """Chef has 
+
+X 5 rupee coins and 
+Y 10 rupee coins. Chef goes to a shop to buy chocolates for Chefina where each chocolate costs 
+Z rupees. Find the maximum number of chocolates that Chef can buy for Chefina.
+    """
+    t = int(input())
+
+while t > 0:
+    x, y, z = map(int, input().split())
+    # Your code goes here
+    t -= 1
+    totalCoin = (5*x+10*y)
+    
+    totalchoclate=totalCoin // z
+    
+    print(totalchoclate)
+
+    """Problem Statement
+Write a program that accepts sets of three numbers, and prints the second-maximum number among the three.
+    """
+    n = int(input())
+for _ in range(n):
+    nums = list(map(int, input().split()))
+    nums.sort()
+    print(nums[1])
+   
+    
     
     
 
