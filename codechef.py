@@ -103,8 +103,7 @@ for _ in range(n):
     nums.sort()
     print(nums[1])
    
-   """
-   Chef wants to become fit for which he decided to walk to the office and return home by walking. It is known that Chef's office is 
+   """Chef wants to become fit for which he decided to walk to the office and return home by walking. It is known that Chef's office is 
 X
 X km away from his home.
 
@@ -112,12 +111,16 @@ If his office is open on
 5
 5 days in a week, find the number of kilometers Chef travels through office trips in a week.
    """
-    
-    
+t = int(input())
+while t > 0:
+    x = int(input())
+    t -= 1
+    # Your code goes here
+    totaldistance=2*x * 5
+    print(totaldistance)
     
 
 
-    
 
 
     
