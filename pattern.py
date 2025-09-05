@@ -553,3 +553,37 @@ else:
                 print()
         print()             
            
+
+
+"""Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
+
+
+
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+
+"""
+n=5 
+for i in range(1,1+n):
+    for j in range(i):
+        print("*",end="")
+    for k in range(2*n-2*i):
+        print(" ",end="")
+    for l in range(i):
+        print("*",end="")    
+    print()
+for i in range(1,1+n):
+    for j in range(n-i):
+        print("*",end="")
+    for k in range(2*i):
+        print(" ",end="")
+    for l in range(n-i):
+        print("*",end="")    
+    print()                  
