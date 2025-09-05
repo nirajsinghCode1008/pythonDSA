@@ -103,7 +103,7 @@ for _ in range(n):
     nums.sort()
     print(nums[1])
    
-   """Chef wants to become fit for which he decided to walk to the office and return home by walking. It is known that Chef's office is 
+"""Chef wants to become fit for which he decided to walk to the office and return home by walking. It is known that Chef's office is 
 X
 X km away from his home.
 
@@ -118,8 +118,37 @@ while t > 0:
     # Your code goes here
     totaldistance=2*x * 5
     print(totaldistance)
-    
 
+    """You are given an integer n. You need to check whether the number is a palindrome number or not. Return true if it's a palindrome number, otherwise return false.
+A palindrome number is a number which reads the same both left to right and right to left.
+    """
+class Solution:
+    def isPalindrome(self, n):
+        counts = 0
+        temp = n                   
+        while n > 0:
+            extract_num = n % 10
+            counts = (counts * 10) + extract_num
+            n = n // 10
+        if counts == temp:          
+            return True
+        else:
+            return False
+    
+       #or
+n=334
+counts=0
+num=n
+while n>0:
+    extract_num=n%10
+    counts=((counts*10)+extract_num)
+    n=n//10
+#print(counts)
+if num == counts:
+    print("True")
+else:
+    print("False")
+    
 
 
 
