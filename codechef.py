@@ -148,6 +148,30 @@ if num == counts:
     print("True")
 else:
     print("False")
+
+"""You are given an integer n. You need to check whether it is an armstrong number or not. Return true if it is an armstrong number, otherwise return false.
+An armstrong number is a number which is equal to the sum of the digits of the number, raised to the power of the number of digits.
+    """
+    
+n=int(input())
+num=n
+counts=0
+temp=n
+while temp>0:
+    temp=temp//10
+    counts +=1
+
+sum_num=0
+temp=n
+while temp>0:
+    extract_num=temp%10
+    sum_num +=extract_num**counts
+    temp=temp//10
+if sum_num==num:
+    print("true")
+else:
+    print("false")
+    
     
 
 
