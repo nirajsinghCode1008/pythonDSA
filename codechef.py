@@ -176,4 +176,18 @@ else:
 
 
 
-    
+class Solution:
+    def isArmstrong(self, n):
+        num=n
+        counts = len(str(n))
+        sum_of_num=0
+        while n>0:
+            extract_num=n%10
+            sum_of_num +=extract_num**counts
+            n=n//10
+        if sum_of_num==num:
+            return True
+        else:
+            return False        
+        
+        
