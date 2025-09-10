@@ -183,7 +183,24 @@ else:
         if sum_of_num==num:
             return True
         else:
-            return False   
+            return False
+
+"""You are given an integer n. You need to check if the number is a perfect number or not. Return true if it is a perfect number, otherwise, return false.
+
+A perfect number is a number whose proper divisors (excluding the number itself) add up to the number it
+""" 
+class Solution:
+    def isPerfect(self, n):
+        num=n
+        count=0
+        temp=n
+        for i in range(1,n):
+            if temp%i==0:
+                count=count+i
+        if num==count:
+            return True
+        else:
+            return False                 
 
             
                  
