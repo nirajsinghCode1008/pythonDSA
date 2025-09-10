@@ -171,12 +171,7 @@ if sum_num==num:
     print("true")
 else:
     print("false")
-    
-    
-
-
-
-class Solution:
+    # class Solution:
     def isArmstrong(self, n):
         num=n
         counts = len(str(n))
@@ -188,6 +183,9 @@ class Solution:
         if sum_of_num==num:
             return True
         else:
-            return False        
+            return False   
+
+            
+                 
         
         
