@@ -251,4 +251,40 @@ class Solution:
                 null.append(i)
         return(null)
         
+
+"""You are given two integers n1 and n2. You need find the Lowest Common Multiple (LCM) of the two given numbers. Return the LCM of the two numbers.
+
+The Lowest Common Multiple (LCM) of two integers is the lowest positive integer that is divisible by both the integers.
+
+
+Examples:
+Input: n1 = 4, n2 = 6
+Output: 12
+Explanation: 4 * 3 = 12, 6 * 2 = 12.
+
+
+12 is the lowest integer that is divisible both 4 and 6.
+Input: n1 = 3, n2 = 5
+Output: 15
+Explanation: 3 * 5 = 15, 5 * 3 = 15.
+15 is the lowest integer that is divisible both 3 and 5.
+
+Input: n1 = 4, n2 = 12
+Output:12
+"""
+class Solution:
+    def LCM(self, n1, n2):
+        if n2 > n1:
+            mn=n1
+        else:
+            mn=n2
+        for i in range(1,mn+1):
+            if n1%i==0 and n2%i==0:
+                hcf=i
+            LCM= n1*n2//hcf 
+        return LCM      
+                            
+
+
+
         
