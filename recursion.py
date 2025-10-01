@@ -5,3 +5,14 @@ def numberprint(num1,num2):
     print(num1)
     numberprint(num1+1,num2)
 numberprint(1,5)    
+
+
+
+
+#write a program to print a number rom given range in #dencreasing  order
+def numberprint(num1,num2):
+    if num1>num2:
+        return
+    numberprint(num1+1,num2)
+    print(num1)
+numberprint(1,5)    
