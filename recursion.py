@@ -43,3 +43,29 @@ def is_leap():
     
 is_leap()
     
+
+
+
+#write a program to print a number rom given range in dencreasing order 
+def printnum(num1):
+    if num1==0:
+        return
+    print(num1)
+    return printnum(num1-1)
+    
+printnum(10)    
+
+
+#write a program to print a number rom given range in increasing order 
+def printnum(num1):
+    print(num1)
+    if num1==10:
+        return
+    return printnum(num1+1)
+    printnum()
+printnum(1)    
+    
+            
+
+    
+          
