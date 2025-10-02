@@ -28,3 +28,18 @@ def is_leap():
     
 is_leap()
      
+
+#write a program to print "hello dabbu" for 100 times means infinite 
+import sys
+print(sys.getrecursionlimit())
+sys.setrecursionlimit(201)
+print(sys.getrecursionlimit())
+count=0
+def is_leap():
+    global count
+    count +=1
+    print("hello",count)
+    is_leap()
+    
+is_leap()
+    
