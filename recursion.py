@@ -73,7 +73,35 @@ def printnum(num1):
         return 1
     return num1*printnum(num1-1)
     
-print(printnum(num1))    
+print(printnum(num1))
+
+
+
+
+
+#write a python program to print your name 10 times without using loop or manually
+i=0
+def printnum(n):
+    global i
+    i = i+1
+    if n==0:
+        return
+    print("dabbu",i)
+    printnum(n-1)
+
+printnum(10)  
+
+        #or.......
+
+def printnum(n):
+    if n==0:
+        return
+    print("dabbu",i)
+    printnum(n-1)
+
+printnum(10)    
+     
+     
     
      
     
