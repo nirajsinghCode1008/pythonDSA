@@ -63,7 +63,19 @@ def printnum(num1):
         return
     return printnum(num1+1)
     printnum()
-printnum(1)    
+printnum(1)
+
+
+#write a factorial of given number
+num1=int(input())
+def printnum(num1):
+    if num1==1:
+        return 1
+    return num1*printnum(num1-1)
+    
+print(printnum(num1))    
+    
+     
     
             
 
