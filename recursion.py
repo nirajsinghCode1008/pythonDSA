@@ -16,3 +16,15 @@ def numberprint(num1,num2):
     numberprint(num1+1,num2)
     print(num1)
 numberprint(1,5)    
+
+
+#write a program to print "hello dabbu" for 999 times means infinite 
+count=0
+def is_leap():
+    global count
+    count +=1
+    print("hello",count)
+    is_leap()
+    
+is_leap()
+     
