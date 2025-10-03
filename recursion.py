@@ -143,7 +143,19 @@ def prime(num):
     
     
 
-print(prime(18796687))    
+print(prime(18796687))  
+
+
+#print fibonacchi number to 10 digits
+def fibo(n):
+    if n==1:
+        return 0
+    if n==2:
+        return 1
+    return (fibo(n-2)+fibo(n-1))
+n=int(input())    
+for i in range(1,n+1):     
+    print(fibo(i))    
        
 
 
