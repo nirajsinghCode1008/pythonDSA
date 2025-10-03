@@ -131,6 +131,22 @@ if ind==0:
     print("not prime")
 if ind==1:
     print("is prime")
+
+
+
+
+#count the number of digit
+def prime(num):
+    if num<10:
+        return 1
+    return 1+ prime(num//10)
+    
+    
+
+print(prime(18796687))    
+       
+
+
     
         
     
