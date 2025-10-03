@@ -99,7 +99,22 @@ def printnum(n):
     print("dabbu",i)
     printnum(n-1)
 
-printnum(10)    
+printnum(10)  
+
+
+
+
+
+# write a program in recursion to print the power in number
+def power(num,pow):
+    if pow==0:
+        return 1
+    return num*power(num,pow-1)
+    print(num)
+    
+print(power(25,2))        
+        
+    
      
      
     
