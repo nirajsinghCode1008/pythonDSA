@@ -112,7 +112,26 @@ def power(num,pow):
     return num*power(num,pow-1)
     print(num)
     
-print(power(25,2))        
+print(power(25,2))  
+
+
+
+
+#is given number is prime or not
+
+def prime(num,num1):
+    if num1==1:
+        return 1
+    if num%num1==0:
+        return 0
+    return prime(num,num1-1)
+num=int(input())
+ind=prime(num,num-1)
+if ind==0:
+    print("not prime")
+if ind==1:
+    print("is prime")
+    
         
     
      
